@@ -1,0 +1,24 @@
+version: 2
+sources:
+  - name: projectshowcase
+    schema: dbtsnowflake
+    tables:
+      - name: r_movies
+        identifier: RAW_MOVIES
+      - name: r_genorme_scores
+        identifier: RAW_GENOME_SCROES
+      - name: r_genome_tags
+        identifier: RAW_GENOME_TAGS
+
+      - name: r_genome_links
+        identifier: RAW_LINKS
+
+      - name: r_ratings
+        identifier: RAW_RATINGS
+
+      - name: r_tags
+        identifier: RAW_TAGS
+
+      # This is a VIEW in Snowflake, but in dbt sources it still goes under 'tables'
+      - name: src_test_view
+        identifier: SOURCE_TES

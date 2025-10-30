@@ -1,0 +1,27 @@
+models:
+  - name: dim_movies
+    description: final movie data for testing and deploy
+    columns:
+      - name: movie_id
+        description: primary key of the movie
+        tests:
+          - unique
+          - not_null
+      - name: movie_title
+        description: title of the movies
+        tests:
+          - not_null
+      
+      - name: genere_array
+        description: standardises genere
+
+  - name: dim_users
+    description: final user data of movies for testing and deploy
+    columns:
+      - name: USER_ID
+        description: primary key of the users
+        tests:
+          - unique
+          - not_null
+
+
